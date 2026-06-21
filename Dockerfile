@@ -10,15 +10,11 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends gcc && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy dependency file first for layer caching
-COPY pyproject.toml .
-
 # Copy source
 COPY . .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -e ".[qrcode]" || \
-    pip install --no-cache-dir python-telegram-bot httpx qrcode
+# Install all dependencies (non-editable for Docker)
+RUN pip install --no-cache-dir python-telegram-bot httpx aiohttp qrcode
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash appuser && \
