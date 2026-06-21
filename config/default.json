@@ -47,29 +47,40 @@
   "agents": {
     "executive": {
       "role": "executive",
-      "model": "gpt-4",
+      "model": "if/kimi-k2-thinking",
       "description": "Executive AI Chief of Staff"
     },
     "jewelry": {
       "role": "jewelry",
-      "model": "gpt-4",
+      "model": "if/kimi-k2-thinking",
       "description": "Jewelry operations specialist"
     },
     "content": {
       "role": "content",
-      "model": "gpt-4",
+      "model": "if/qwen3-coder-plus",
       "description": "Content creation engine"
     },
     "research": {
       "role": "research",
-      "model": "gpt-4",
+      "model": "gc/gemini-3-flash-preview",
       "description": "Research and analysis"
     },
     "support": {
       "role": "support",
-      "model": "gpt-4",
+      "model": "if/kimi-k2-thinking",
       "description": "Customer support"
     }
+  },
+  "ai": {
+    "provider": "9router",
+    "base_url": "https://r6nmz69.abc-tunnel.us/v1",
+    "fallback_chain": [
+      "if/kimi-k2-thinking",
+      "if/qwen3-coder-plus",
+      "gc/gemini-3-flash-preview"
+    ],
+    "timeout": 60,
+    "max_retries": 3
   },
   "defaults": {
     "rate_limit": 30,
