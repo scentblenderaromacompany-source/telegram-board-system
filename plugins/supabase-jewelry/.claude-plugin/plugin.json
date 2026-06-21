@@ -1,0 +1,11 @@
+{
+  "name": "supabase-jewelry",
+  "version": "1.0.0",
+  "description": "Supabase-backed jewelry business plugin for Caspers Heritage. Manages product catalog, orders, and marketplace integration.",
+  "author": {
+    "name": "Caspers Heritage",
+    "url": "https://caspersheritage.com"
+  },
+  "license": "MIT",
+  "keywords": ["jewelry", "supabase", "ecommerce", "marketplace"]
+}

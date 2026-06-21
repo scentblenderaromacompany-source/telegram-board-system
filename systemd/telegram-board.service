@@ -1,0 +1,31 @@
+[Unit]
+Description=Telegram Board System
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=bobby
+Group=bobby
+WorkingDirectory=/home/bobby/telegram-board-system
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 -m src.main
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Security hardening
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/bobby/telegram-board-system/config /home/bobby/telegram-board-system/logs
+PrivateTmp=yes
+
+# Resource limits
+LimitNOFILE=65536
+MemoryMax=512M
+CPUQuota=80%
+
+[Install]
+WantedBy=multi-user.target

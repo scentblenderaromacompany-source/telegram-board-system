@@ -1,0 +1,74 @@
+{
+  "telegram": {
+    "bots": {
+      "openclaw-executive": {
+        "token_env": "TELEGRAM_BOT_TOKEN_OPENCLAW",
+        "business_id": "openclaw",
+        "mask_id": "executive-mask",
+        "webhook_url": null,
+        "webhook_secret": null,
+        "allowed_chat_ids": [],
+        "allowed_user_ids": [],
+        "settings": {
+          "parse_mode": "HTML",
+          "max_message_length": 4096,
+          "rate_limit": 30,
+          "use_fallback_transport": true,
+          "enable_forum_topics": false,
+          "enable_rich_messages": true
+        }
+      },
+      "hermes-executive": {
+        "token_env": "TELEGRAM_BOT_TOKEN_HERMES",
+        "business_id": "hermes",
+        "mask_id": "executive-mask",
+        "webhook_url": null,
+        "webhook_secret": null,
+        "allowed_chat_ids": [],
+        "allowed_user_ids": [],
+        "settings": {
+          "parse_mode": "HTML",
+          "max_message_length": 4096,
+          "rate_limit": 30,
+          "use_fallback_transport": true,
+          "enable_forum_topics": false,
+          "enable_rich_messages": true
+        }
+      },
+      "caspers-support": {
+        "token_env": "TELEGRAM_BOT_TOKEN_CASPERS",
+        "business_id": "caspers_heritage",
+        "mask_id": "jewelry-expert-mask",
+        "webhook_url": null,
+        "webhook_secret": null,
+        "allowed_chat_ids": [],
+        "allowed_user_ids": [],
+        "settings": {
+          "parse_mode": "HTML",
+          "max_message_length": 4096,
+          "rate_limit": 30,
+          "use_fallback_transport": true,
+          "enable_forum_topics": true,
+          "enable_rich_messages": true
+        }
+      }
+    },
+    "network": {
+      "fallback_ips": ["149.154.167.220", "149.154.167.221", "149.154.167.222"],
+      "use_doh_discovery": true,
+      "connect_timeout": 5,
+      "read_timeout": 5,
+      "write_timeout": 5,
+      "connection_pool_size": 1
+    },
+    "webhooks": {
+      "enabled": false,
+      "base_url": null,
+      "secret_tokens": {}
+    },
+    "commands": {
+      "set_menu": true,
+      "max_per_scope": 100
+    }
+  }
+}

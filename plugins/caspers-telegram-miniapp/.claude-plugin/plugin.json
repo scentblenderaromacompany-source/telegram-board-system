@@ -1,0 +1,11 @@
+{
+  "name": "caspers-telegram-miniapp",
+  "version": "1.0.0",
+  "description": "Telegram Mini App integration for Caspers Heritage. Handles web-app sessions, payments, and deep links.",
+  "author": {
+    "name": "Caspers Heritage",
+    "url": "https://caspersheritage.com"
+  },
+  "license": "MIT",
+  "keywords": ["telegram", "miniapp", "payments", "web-app"]
+}

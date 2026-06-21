@@ -1,0 +1,70 @@
+{
+  "masks": [
+    {
+      "mask_id": "executive-mask",
+      "name": "Executive Assistant",
+      "mask_type": "custom",
+      "business_id": "openclaw",
+      "display_name": "Executive AI",
+      "avatar_url": null,
+      "bio": "Executive AI Chief of Staff",
+      "response_style": "professional",
+      "tone": "direct",
+      "emoji_enabled": false,
+      "sticker_packs": [],
+      "vocabulary": [],
+      "restricted_words": [],
+      "settings": {}
+    },
+    {
+      "mask_id": "jewelry-expert-mask",
+      "name": "Jewelry Expert",
+      "mask_type": "custom",
+      "business_id": "caspers_heritage",
+      "display_name": "Caspers Heritage Expert",
+      "avatar_url": null,
+      "bio": "Caspers Heritage Jewelry expert - each piece tells a story",
+      "response_style": "heritage",
+      "tone": "warm",
+      "emoji_enabled": true,
+      "sticker_packs": [],
+      "vocabulary": [],
+      "restricted_words": [],
+      "settings": {}
+    },
+    {
+      "mask_id": "content-creator-mask",
+      "name": "Content Creator",
+      "mask_type": "content",
+      "business_id": "content_business",
+      "display_name": "Content Engine",
+      "avatar_url": null,
+      "bio": "Automated content creation assistant",
+      "response_style": "friendly",
+      "tone": "creative",
+      "emoji_enabled": true,
+      "sticker_packs": [],
+      "vocabulary": [],
+      "restricted_words": [],
+      "settings": {}
+    },
+    {
+      "mask_id": "test_mask",
+      "name": "Test",
+      "mask_type": "support",
+      "business_id": "biz",
+      "display_name": "SupportBot",
+      "avatar_url": null,
+      "bio": "",
+      "response_style": "professional",
+      "tone": "friendly",
+      "emoji_enabled": true,
+      "sticker_packs": [],
+      "vocabulary": [],
+      "restricted_words": [
+        "badword"
+      ],
+      "settings": {}
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "system": {
+    "name": "Telegram Board System",
+    "version": "2.0.0",
+    "description": "Multi-bot channel management with mask support for OpenClaw and Hermes"
+  },
+  "businesses": {
+    "openclaw": {
+      "id": "openclaw",
+      "name": "OpenClaw",
+      "description": "OpenClaw AI Agent System",
+      "telegram_bot": null,
+      "channels": [],
+      "agents": ["executive"]
+    },
+    "hermes": {
+      "id": "hermes",
+      "name": "Hermes",
+      "description": "Hermes Agent System",
+      "telegram_bot": null,
+      "channels": [],
+      "agents": ["executive"]
+    },
+    "caspers_heritage": {
+      "id": "caspers_heritage",
+      "name": "Caspers Heritage Jewelry",
+      "description": "Caspers Heritage Jewelry - Seattle-based fine jewelry",
+      "telegram_bot": null,
+      "channels": [],
+      "agents": ["jewelry", "support"],
+      "settings": {
+        "mini_app_url": null,
+        "supabase_url": null,
+        "ebay_enabled": false,
+        "shopify_enabled": false
+      }
+    },
+    "content_business": {
+      "id": "content_business",
+      "name": "Content Business",
+      "description": "Automated content creation system",
+      "telegram_bot": null,
+      "channels": [],
+      "agents": ["content", "research"]
+    }
+  },
+  "agents": {
+    "executive": {
+      "role": "executive",
+      "model": "gpt-4",
+      "description": "Executive AI Chief of Staff"
+    },
+    "jewelry": {
+      "role": "jewelry",
+      "model": "gpt-4",
+      "description": "Jewelry operations specialist"
+    },
+    "content": {
+      "role": "content",
+      "model": "gpt-4",
+      "description": "Content creation engine"
+    },
+    "research": {
+      "role": "research",
+      "model": "gpt-4",
+      "description": "Research and analysis"
+    },
+    "support": {
+      "role": "support",
+      "model": "gpt-4",
+      "description": "Customer support"
+    }
+  },
+  "defaults": {
+    "rate_limit": 30,
+    "max_message_length": 4096,
+    "retry_attempts": 3,
+    "memory_max_entries": 10000,
+    "agent_temperature": 0.7,
+    "enable_metrics": true,
+    "enable_health_checks": true
+  },
+  "plugins": {
+    "supabase-jewelry": {"enabled": true},
+    "content-engine": {"enabled": true},
+    "caspers-telegram-miniapp": {"enabled": true}
+  }
+}

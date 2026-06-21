@@ -1,0 +1,11 @@
+{
+  "name": "content-engine",
+  "version": "1.0.0",
+  "description": "Content creation, scheduling, and multi-platform publishing engine.",
+  "author": {
+    "name": "Caspers Heritage",
+    "url": "https://caspersheritage.com"
+  },
+  "license": "MIT",
+  "keywords": ["content", "scheduling", "publishing", "templates"]
+}

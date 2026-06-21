@@ -1,0 +1,44 @@
+{
+  "channels": [
+    {
+      "channel_id": "openclaw-support",
+      "name": "OpenClaw Support",
+      "business_id": "openclaw",
+      "channel_type": "support",
+      "status": "active",
+      "description": "OpenClaw customer support channel"
+    },
+    {
+      "channel_id": "hermes-support",
+      "name": "Hermes Support",
+      "business_id": "hermes",
+      "channel_type": "support",
+      "status": "active",
+      "description": "Hermes customer support channel"
+    },
+    {
+      "channel_id": "caspers-support",
+      "name": "Caspers Heritage Support",
+      "business_id": "caspers_heritage",
+      "channel_type": "support",
+      "status": "active",
+      "description": "Jewelry customer support"
+    },
+    {
+      "channel_id": "caspers-broadcast",
+      "name": "Caspers Heritage Announcements",
+      "business_id": "caspers_heritage",
+      "channel_type": "broadcast",
+      "status": "active",
+      "description": "New arrivals and promotions"
+    },
+    {
+      "channel_id": "content-scheduling",
+      "name": "Content Scheduling",
+      "business_id": "content_business",
+      "channel_type": "internal",
+      "status": "active",
+      "description": "Content scheduling and management"
+    }
+  ]
+}

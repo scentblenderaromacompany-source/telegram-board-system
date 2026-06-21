@@ -1,0 +1,32 @@
+{
+  "bots": [
+    {
+      "bot_id": "openclaw-executive",
+      "name": "OpenClaw Executive",
+      "business_id": "openclaw",
+      "mask_id": "executive-mask",
+      "role": "executive"
+    },
+    {
+      "bot_id": "hermes-executive",
+      "name": "Hermes Executive",
+      "business_id": "hermes",
+      "mask_id": "executive-mask",
+      "role": "executive"
+    },
+    {
+      "bot_id": "caspers-support",
+      "name": "Caspers Heritage Support",
+      "business_id": "caspers_heritage",
+      "mask_id": "jewelry-expert-mask",
+      "role": "support"
+    },
+    {
+      "bot_id": "content-engine",
+      "name": "Content Engine",
+      "business_id": "content_business",
+      "mask_id": "content-creator-mask",
+      "role": "content"
+    }
+  ]
+}
